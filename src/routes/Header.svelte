@@ -13,10 +13,6 @@
     </div>
 </header>
 
-<div class="content">
-    
-</div>
-
 <style>
     header{
         display: flex;
@@ -24,7 +20,7 @@
         align-items: center;
         justify-content: space-around;
         position: relative;
-        height: 75vh;
+        height: 100vh;
         width: 100vw;
         color: rgb(225, 225, 225);
     }
