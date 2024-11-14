@@ -17,8 +17,8 @@
     header{
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
-        justify-content: space-around;
         position: relative;
         height: 100vh;
         width: 100vw;
@@ -36,10 +36,11 @@
     }
 
     header h1{
-        font-size: 45px;
+        font-size: 55px;
     }
 
     .headerImage{
-        height: 75%;
+        height: 50%;
+        margin: 35px 0;
     }
 </style>
