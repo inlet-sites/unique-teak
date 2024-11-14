@@ -4,6 +4,11 @@
 </script>
 
 <header>
+    <div class="menu">
+        <a href="/products">Products</a>
+        <a href="/gallery">Gallery</a>
+    </div>
+
     <img class="headerBackground" src={background} alt="Teak Wood pattern">
     <h1>Unique Teak Creations</h1>
     <img class="headerImage" src={headboard} alt="Teak headboard">
@@ -23,6 +28,29 @@
         height: 100vh;
         width: 100vw;
         color: rgb(225, 225, 225);
+    }
+
+    .menu{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .menu a{
+        display: flex;
+        font-size: 28px;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 15px 0 15px 5px;
+        width: 150px;
+        color: rgb(150, 150, 150, 0.75);
+        text-decoration: none;
+        transition: padding-left 0.3s, width 0.3s;
+    }
+
+    .menu a:hover{
+        padding-left: 20px;
+        width: 165px;
+        color: rgba(225, 225, 225, 0.75);
     }
 
     .headerBackground{
