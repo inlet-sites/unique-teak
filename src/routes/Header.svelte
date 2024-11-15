@@ -65,10 +65,45 @@
 
     header h1{
         font-size: 55px;
+        text-align: center;
+    }
+
+    header h2{
+        text-align: center;
     }
 
     .headerImage{
         height: 50%;
         margin: 35px 0;
+    }
+
+    @media screen and (max-width: 700px){
+        .menu{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .menu a{
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    @media screen and (max-width: 500px){
+        .headerImage{
+            height: initial;
+            width: 95%;
+        }
+
+        header h1{
+            font-size: 32px;
+        }
+
+        header h2{
+            font-size: 22px;
+            width: 95%;
+            margin-top: 15px;
+        }
     }
 </style>
