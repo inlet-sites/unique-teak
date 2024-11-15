@@ -100,4 +100,22 @@
     .third{
         background-image: url("/shop.webp");
     }
+
+    @media screen and (max-width: 700px){
+        .storyItem{
+            flex-direction: column;
+        } 
+
+        .storyItem img{
+            height: 175px;
+        }
+
+        .storyItem p{
+            max-width: initial;
+            text-align: justify;
+            padding: 0 5px;
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
 </style>
