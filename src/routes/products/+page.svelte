@@ -1,5 +1,6 @@
 <script>
     import "../../global.css";
+    import Product from "./Product.svelte";
 
     let products = $state([]);
     let tags = $state({});
@@ -38,6 +39,7 @@
             if(response.error){
                 console.error(error);
             }else{
+                console.log(response);
                 tags = sortByTag(response);
                 products = tags.all;
             }
@@ -48,6 +50,11 @@
 </script>
 
 <div class="container">
+    <div class="menu">
+        <a href="/">Home</a>
+        <a href="/gallery">Gallery</a>
+    </div>
+
     <h1>Unique Teak Creations</h1>
 
     <div class="tags">
@@ -62,7 +69,7 @@
 
     <div class="products">
         {#each products as product}
-            <h2>{product.name}</h2>
+            <Product product={product}/>
         {/each}
     </div>
 </div>
@@ -77,9 +84,10 @@
         padding: 35px;
     }
 
-    .container h1{
+    h1{
         font-size: 38px;
         margin-bottom: 35px;
+        text-align: center;
     }
 
     .tags{
@@ -97,6 +105,7 @@
         cursor: pointer;
         border: 1px solid black;
         margin-right: -1px;
+        margin: 1px -1px 5px 0;
     }
 
     .tag:hover{
@@ -105,5 +114,55 @@
 
     .tag.active{
         border-bottom: 2px solid red;
+    }
+
+    .products{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .menu{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .menu a{
+        display: flex;
+        font-size: 28px;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 15px 0 15px 5px;
+        width: 150px;
+        color: rgb(150, 150, 150, 0.75);
+        text-decoration: none;
+        transition: padding-left 0.3s, width 0.3s;
+    }
+
+    .menu a:hover{
+        padding-left: 20px;
+        width: 165px;
+        color: rgba(225, 225, 225, 0.75);
+    }
+
+    @media screen and (max-width: 750px){
+        .menu{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .menu a{
+            justify-content: center;
+            color: rgba(235, 235, 235, 0.75);
+        }
+
+        h1{
+            margin-top: 35px;
+        }
+
+        .tags{
+            width: 95%;
+        }
     }
 </style>
