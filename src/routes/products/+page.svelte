@@ -2,10 +2,6 @@
     import "../../global.css";
     import Product from "./Product.svelte";
 
-    let products = $state([]);
-    let tags = $state({});
-    let activeTag = $state("all");
-
     const sortByTag = (data)=>{
         const tags = {};
         tags["all"] = [];
@@ -23,30 +19,15 @@
         return tags;
     }
 
+    let {data} = $props();
+    let products = $state(data.products);
+    let tags = $state(sortByTag(data.products));
+    let activeTag = $state("all");
+
     const searchTags = (tag)=>{
         activeTag = tag;
         products = tags[tag];
     }
-
-    fetch("https://api.inlet.shop/product/vendor/672cd710c3fa18c32ec1c18c", {
-        method: "get",
-        headers: {
-            "Content-Type": "application/json"
-        }
-    })
-        .then(r=>r.json())
-        .then((response)=>{
-            if(response.error){
-                console.error(error);
-            }else{
-                console.log(response);
-                tags = sortByTag(response);
-                products = tags.all;
-            }
-        })
-        .catch((err)=>{
-            console.error(err);
-        });
 </script>
 
 <div class="container">

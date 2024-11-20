@@ -13,6 +13,9 @@
 
 <style>
     .Product{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         width: 250px;
         height: 250px;
         margin: 25px;
