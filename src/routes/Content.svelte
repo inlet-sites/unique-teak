@@ -9,14 +9,14 @@
 <div class="Content">
     <div class="contentItem first">
         <div class="storyItem">
-            <img src={smallBench} alt="Small teak bench">
+            <img src={smallBench} alt="Small teak bench" loading="lazy">
             <p>Velit senectus tristique, proin sem pellentesque aptent. Donec posuere porttitor, vivamus orci, diam dictum massa aliquam litora rutrum. Lorem vivamus proin malesuada, sodales ut ad, euismod consectetur habitasse placerat fusce imperdiet a dictumst.</p>
         </div>
 
         <div></div>
 
         <div class="storyItem storyReverse">
-            <img src={crab} alt="Teak crab in front of water">
+            <img src={crab} alt="Teak crab in front of water" loading="lazy">
             <p>Lobortis dictumst eu, rhoncus vulputate, eleifend potenti magna pharetra enim. Quis mollis, inceptos ligula ipsum. Quisque himenaeos, nec netus sociosqu.</p>
         </div>
     </div>
@@ -25,7 +25,7 @@
         <div></div>
 
         <div class="storyItem">
-            <img src={leaf} alt="Leaf design from teak">
+            <img src={leaf} alt="Leaf design from teak" loading="lazy">
             <p>Sodales in semper, feugiat porttitor, congue elementum id nulla dictum. Semper nostra eget lectus, proin senectus lacus, bibendum fringilla viverra quisque gravida odio hendrerit.</p>
         </div>
 
@@ -34,14 +34,14 @@
 
     <div class="contentItem third">
         <div class="storyItem">
-            <img src={platter} alt="Leaf shaped platter from teak">
+            <img src={platter} alt="Leaf shaped platter from teak" loading="lazy">
             <p>Inceptos quisque quisque aenean, aliquam himenaeos ante, tristique porta dapibus ad sagittis vehicula in.</p>
         </div>
 
         <div></div>
 
         <div class="storyItem">
-            <img src={stool} alt="Teak stool">
+            <img src={stool} alt="Teak stool" loading="lazy">
             <p>Cursus sapien blandit, scelerisque nam, rutrum euismod curabitur orci viverra sociosqu dui.</p>
         </div>
     </div>
