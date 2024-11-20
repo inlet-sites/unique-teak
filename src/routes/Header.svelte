@@ -1,6 +1,7 @@
 <script>
     import background from "$lib/background.webp";
-    import headboard from "$lib/headboard.png";
+    import heronHero from "$lib/heronHero.png";
+    import dolphinHero from "$lib/dolphinHero.png";
 </script>
 
 <header>
@@ -11,8 +12,11 @@
 
     <img class="headerBackground" src={background} alt="Teak Wood pattern">
     <h1>Unique Teak Creations</h1>
-    <img class="headerImage" src={headboard} alt="Teak headboard">
-    <div>
+    <div class="headerImages">
+        <img class="mobileHide" src={heronHero} alt="Teak hero sculpture">
+        <img src={dolphinHero} alt="Teak dolphin sculpture">
+    </div>
+    <div class="subtext">
         <h2>300 - 500 year old, Grade A, Teak Furniture</h2>
         <h2>Beautifully Handcrafted by Skilled Artisans</h2>
     </div>
@@ -70,11 +74,19 @@
 
     header h2{
         text-align: center;
+        margin-top: 35px;
     }
 
-    .headerImage{
+    .headerImages{
+        display: flex;
+        justify-content: space-around;
         height: 50%;
+        width: 50%;
         margin: 35px 0;
+    }
+
+    .headerImages img{
+        height: 100%;
     }
 
     @media screen and (max-width: 700px){
@@ -88,14 +100,13 @@
             display: flex;
             justify-content: center;
         }
+
+        .mobileHide{
+            display: none;
+        }
     }
 
     @media screen and (max-width: 500px){
-        .headerImage{
-            height: initial;
-            width: 95%;
-        }
-
         header h1{
             font-size: 32px;
         }
