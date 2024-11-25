@@ -10,14 +10,14 @@
     <div class="contentItem first">
         <div class="storyItem">
             <img src={smallBench} alt="Small teak bench" loading="lazy">
-            <p>Velit senectus tristique, proin sem pellentesque aptent. Donec posuere porttitor, vivamus orci, diam dictum massa aliquam litora rutrum. Lorem vivamus proin malesuada, sodales ut ad, euismod consectetur habitasse placerat fusce imperdiet a dictumst.</p>
+            <p>Bojonegoro is one of the names of the regions on the island of Java, Indonesia which has the best quality teak wood in the world</p>
         </div>
 
         <div></div>
 
         <div class="storyItem storyReverse">
             <img src={crab} alt="Teak crab in front of water" loading="lazy">
-            <p>Lobortis dictumst eu, rhoncus vulputate, eleifend potenti magna pharetra enim. Quis mollis, inceptos ligula ipsum. Quisque himenaeos, nec netus sociosqu.</p>
+            <p>In the past, during the Dutch colonization of Indonesia, they made ships from teak wood, because it has been proven to be the strongest of all woods</p>
         </div>
     </div>
 
@@ -26,7 +26,7 @@
 
         <div class="storyItem">
             <img src={leaf} alt="Leaf design from teak" loading="lazy">
-            <p>Sodales in semper, feugiat porttitor, congue elementum id nulla dictum. Semper nostra eget lectus, proin senectus lacus, bibendum fringilla viverra quisque gravida odio hendrerit.</p>
+            <p>The remnants of teak logging left behind teak roots that are now more than 500 years old and still remain in the ground</p>
         </div>
 
         <div></div>
@@ -35,14 +35,14 @@
     <div class="contentItem third">
         <div class="storyItem">
             <img src={platter} alt="Leaf shaped platter from teak" loading="lazy">
-            <p>Inceptos quisque quisque aenean, aliquam himenaeos ante, tristique porta dapibus ad sagittis vehicula in.</p>
+            <p>Previously, teak roots were considered rubbish, but with the expertise of local residents, this rubbish was turned into something very valuable, namely teak wood crafts in the form of statues and carvings</p>
         </div>
 
         <div></div>
 
         <div class="storyItem">
             <img src={stool} alt="Teak stool" loading="lazy">
-            <p>Cursus sapien blandit, scelerisque nam, rutrum euismod curabitur orci viverra sociosqu dui.</p>
+            <p>All of our teak wood furniture & carvings are of the highest grade</p>
         </div>
     </div>
 </div>
@@ -80,9 +80,10 @@
 
     .storyItem p{
         max-width: 50%;
-        font-size: 22px;
-        line-height: 40px;
+        font-size: 28px;
+        line-height: 65px;
         color: rgb(215, 215, 215);
+        text-align: center;
     }
 
     .storyReverse{

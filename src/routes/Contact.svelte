@@ -43,7 +43,7 @@
                 <path d="M7 9L12 12.5L17 9" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                 <path d="M2 17V7C2 5.89543 2.89543 5 4 5H20C21.1046 5 22 5.89543 22 7V17C22 18.1046 21.1046 19 20 19H4C2.89543 19 2 18.1046 2 17Z" stroke="#000000" stroke-width="1.5"></path>
             </svg>
-            <p>mickbaldwin45@gmail.com</p>
+            <p>mick@uniqueteakcreations.shop</p>
         </a>
 
         <a class="item" href="https://maps.app.goo.gl/XdBJRGZSZ1VoBPy76" target="_blank">
@@ -96,7 +96,7 @@
     .item p{
         margin-left: 25px;
         color: black;
-        font-size: 22px;
+        font-size: 20px;
     }
 
     svg{
