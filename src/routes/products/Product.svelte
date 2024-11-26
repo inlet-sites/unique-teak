@@ -2,14 +2,14 @@
     let {product} = $props();
 </script>
 
-<div class="Product">
+<a href="https://inlet.shop/utc/{product.id}" class="Product" target="_blank">
     <img
         src="https://api.inlet.shop/document/{product.images[0]}"
         alt={product.name}
     >
     <p class="name">{product.name}</p>
     <p>${(product.price / 100).toFixed(2)}</p>
-</div>
+</a>
 
 <style>
     .Product{
@@ -19,6 +19,8 @@
         width: 250px;
         height: 250px;
         margin: 25px;
+        color: black;
+        text-decoration: none;
     }
 
     img{

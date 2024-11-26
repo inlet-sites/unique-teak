@@ -53,6 +53,15 @@
             </svg>
             <p>5190 US Highway 17, Unit 300D, Murrells Inlet, SC</p>
         </a>
+
+        <a class="item" href="https://inlet.shop/utc/" taget="_blank">
+            <svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" color="#000000">
+                <path d="M3 6H22L19 16H6L3 6ZM3 6L2.25 3.5" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M11 19.5C11 20.3284 10.3284 21 9.5 21C8.67157 21 8 20.3284 8 19.5" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M17 19.5C17 20.3284 16.3284 21 15.5 21C14.6716 21 14 20.3284 14 19.5" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+            <p>Inlet.Shop/UTC</p>
+        </a>
     </div>
 </div>
 
