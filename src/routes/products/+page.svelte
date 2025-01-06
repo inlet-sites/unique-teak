@@ -23,6 +23,7 @@
     let products = $state(data.products);
     let tags = $state(sortByTag(data.products));
     let activeTag = $state("all");
+    $inspect(products);
 
     const searchTags = (tag)=>{
         activeTag = tag;
