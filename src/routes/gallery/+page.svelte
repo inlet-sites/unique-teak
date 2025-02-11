@@ -257,5 +257,22 @@
             margin: 45px auto;
             justify-content: center;
         }
+
+        .album{
+            flex-direction: column;
+            height: initial;
+            width: 200px;
+        }
+
+        .album img{
+            height: initial;
+            width: 100%;
+        }
+
+        .album .albumName{
+            position: static;
+            height: initial;
+            padding: 5px;
+        }
     }
 </style>
