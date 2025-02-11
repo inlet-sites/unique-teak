@@ -274,5 +274,26 @@
             height: initial;
             padding: 5px;
         }
+
+        .singleAlbum{
+            margin: 75px 15px 0 15px;
+        }
+
+        .albumDescription{
+            font-size: 18px;
+            margin-top: 15px;
+        }
+
+        .photos{
+            width: 100%;
+        }
+
+        .photos button{
+            max-width: 100%;
+        }
+
+        .photos img{
+            width: 100%;
+        }
     }
 </style>
