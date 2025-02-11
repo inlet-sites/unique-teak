@@ -25,14 +25,21 @@
 
 <div class="container">
     <div class="menu">
-        <a href="/">Home</a>
-        <a href="/products">Products</a>
+        <a class="menuButton" href="/">Home</a>
+        <a class="menuButton" href="/products">Products</a>
+        {#if showAlbum}
+            <button class="menuButton" onclick={()=>{showAlbum = null}}>Albums</button>
+        {/if}
     </div>
 
     {#if showAlbum}
         {#if showPhoto}
             <div class="singlePhoto">
-                <button class="closePhoto" onclick={()=>{showPhoto = null}}>
+                <button
+                    class="closePhoto"
+                    onclick={()=>{showPhoto = null}}
+                    aria-label="close"
+                >
                     <svg width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <circle cx="12" cy="12" r="10"></circle>
                         <line x1="15" y1="9" x2="9" y2="15"></line>
@@ -96,7 +103,7 @@
         z-index: 10;
     }
 
-    .menu a{
+    .menuButton{
         display: flex;
         font-size: 28px;
         background: rgba(0, 0, 0, 0.5);
@@ -105,16 +112,18 @@
         color: rgba(150, 150, 150, 0.75);
         text-decoration: none;
         transition: padding-left 0.3s, width 0.3s;
+        border: none;
+        cursor: pointer;
     }
 
-    .menu a:hover{
+    .menuButton:hover{
         padding-left: 20px;
         width: 165px;
         color: rgba(225, 225, 225, 0.75);
     }
 
     .singleAlbum{
-        margin: 35px 35px 35px 150px;
+        margin: 35px 35px 35px 175px;
     }
 
     .albumDescription{
@@ -197,7 +206,7 @@
         flex-wrap: wrap;
         height: 100%;
         width: 75%;
-        margin: 35px auto 0 150px;
+        margin: 35px auto 0 175px;
     }
 
     .album{
