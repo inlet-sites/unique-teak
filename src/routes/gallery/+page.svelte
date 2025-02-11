@@ -295,5 +295,17 @@
         .photos img{
             width: 100%;
         }
+
+        @media screen and (max-width: 550px){
+            .menu button{
+                position: absolute;
+                top: 65px;
+                left: 0;
+            }
+
+            .singleAlbum{
+                margin: 135px 15px 0 15px;
+            }
+        }
     }
 </style>
